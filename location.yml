@@ -1,0 +1,25 @@
+server:
+    port: 7020
+    
+spring:
+    profiles: dev
+  
+    application:
+        name: location
+    
+    message: welcome to location..
+        
+eureka:
+    client:
+        register-with-eureka: true
+        fetch-registry: true
+        service-url:
+            defaultZone: http://localhost:7010/eureka
+      
+    instance:
+        # this is to generate instance id as a unique value
+        instance-id: ${spring.application.name}:${random.value}
+    
+management:
+    security:
+        enabled: false
