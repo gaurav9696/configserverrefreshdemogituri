@@ -14,7 +14,7 @@ eureka:
         register-with-eureka: true
         fetch-registry: true
         service-url:
-            defaultZone: http://localhost:8010/eureka
+            defaultZone: http://localhost:8010/eureka-server/eureka
       
     instance:
         # this is to generate instance id as a unique value
