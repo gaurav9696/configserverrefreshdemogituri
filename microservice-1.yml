@@ -1,11 +1,11 @@
 server:
-    port: 7020
+    port: 8020
     
 spring:
     profiles: dev
   
     application:
-        name: location-service
+        name: microservice-1
     
     message: welcome to location..
         
@@ -14,7 +14,7 @@ eureka:
         register-with-eureka: true
         fetch-registry: true
         service-url:
-            defaultZone: http://localhost:7010/eureka
+            defaultZone: http://localhost:8010/eureka
       
     instance:
         # this is to generate instance id as a unique value
