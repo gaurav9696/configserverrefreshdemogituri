@@ -11,9 +11,9 @@ message: welcome to microservice 1..
         
 eureka:
     client:
-        register-with-eureka: true
-        fetch-registry: true
-        service-url:
+        registerWithEureka: true
+        fetchRegistry: true
+        serviceUrl:
             defaultZone: http://localhost:8010/eureka
       
     instance:
