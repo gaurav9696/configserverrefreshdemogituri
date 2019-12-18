@@ -7,7 +7,7 @@ spring:
     application:
         name: microservice-1
     
-    message: welcome to microservice 1..
+message: welcome to microservice 1..
         
 eureka:
     client:
