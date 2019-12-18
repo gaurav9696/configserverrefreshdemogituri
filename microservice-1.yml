@@ -1,25 +1,19 @@
 server:
-    port: 8020
+  port: 8020
     
 spring:
-    profiles: dev
+  profiles: dev
   
-    application:
-        name: microservice-1
-    
-message: welcome to microservice 1..
+  application:
+    name: microservice-1
         
 eureka:
-    client:
-        registerWithEureka: true
-        fetchRegistry: true
-        serviceUrl:
-            defaultZone: http://localhost:8010/eureka
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8010/eureka
       
-    instance:
-        # this is to generate instance id as a unique value
-        instance-id: ${spring.application.name}:${random.value}
-    
-management:
-    security:
-        enabled: false
+  instance:
+    # this is to generate instance id as a unique value
+    instance-id: ${spring.application.name}:${random.value}
